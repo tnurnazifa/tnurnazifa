@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tengku Nurnazifa</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      animation: slideIn 1s ease-out;
+      transition: background-color 0.3s ease;
+    }
+
+    header:hover {
+      background-color: #f0f0f0;
+    }
+
+    header h1 {
+      font-family: "serif";
+      letter-spacing: 2px;
+      font-size: 1.5em;
+      animation: fadeIn 1.5s ease-out;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    header h1:hover {
+      color: #555;
+    }
+
+    /* Navigation Menu */
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 0.9em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      animation: fadeIn 2s ease-out;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #555;
+    }
+
+    /* Main Section */
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .main-container img {
+      max-width: 40%;
+      border-radius: 10px;
+      animation: zoomIn 1.5s ease-out;
+      transition: transform 0.3s ease;
+    }
+
+    .main-container img:hover {
+      transform: scale(1.05);
+    }
+
+    .text-section {
+      width: 55%;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    .text-section h2 {
+      font-size: 4em;
+      margin: 0;
+      font-family: serif;
+      animation: slideIn 1.5s ease-out;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .text-section h2:hover {
+      color: #555;
+    }
+
+    .text-section p {
+      font-size: 2em;
+      margin-top: 10px;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .text-section p:hover {
+      color: #555;
+    }
+
+    /* Quote Section */
+    .quote-section {
+      background-color: #f0f0f0;
+      padding: 50px 20px;
+      text-align: center;
+      font-family: "Georgia", serif;
+      font-style: italic;
+      margin: 20px auto;
+      border-radius: 10px;
+      animation: fadeIn 3s ease-out;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .quote-section:hover {
+      background-color: #e0e0e0;
+    }
+
+    .quote-section p {
+      font-size: 1.5em;
+      line-height: 1.8;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .quote-section p:hover {
+      color: #555;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 4px;
+      font-size: 0.9em;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      animation: fadeIn 3s ease-out;
+      transition: background-color 0.3s ease;
+    }
+
+    footer:hover {
+      background-color: #444;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #555;
+    }
+
+    /* Animation Definitions */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+      }
+
+      .main-container img,
+      .text-section {
+        width: 100%;
+      }
+
+      .quote-section p {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>TENGKU NURNAZIFA</h1>
+    <nav>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="experiences.html">EXPERIENCES</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT ME</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <section class="main-container">
+    <img src="image1.jpg" alt="Tengku Nurnazifa Photo">
+    <div class="text-section">
+      <h2>Hi,</h2>
+      <p>Glad You Found Me!</p>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <p>
+      Watch your thoughts, they become your words,<br>
+      watch your words, they become your actions,<br>
+      watch your actions, they become your habits,<br>
+      watch your habits, they become your characters,<br>
+      watch your characters, it becomes your destiny.<br>
+      - by Lao Tzu
+    </p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Tengku Nurnazifa. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>

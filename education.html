@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengku Nurnazifa</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+
+            /* Background Image */
+            background-image: url('bg2.jpg'); /* Replace 'bg2.jpg' with your image file path */
+            background-size: cover; /* Make the image cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed during scroll */
+            color: #333; /* Text color for readability */
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 30px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-bottom: 1px solid #ddd;
+            animation: slideIn 1s ease-out; /* Slide-in animation */
+        }
+
+        header h1 {
+            font-family: "Playfair Display, serif"; /* Changed font */
+            letter-spacing: 1px;
+            font-size: 1.5em; /* Increased size */
+            color: #000; /* Set color */
+            animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.9em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: fadeIn 2s ease-out; /* Fade-in animation */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-out; /* Fade-in animation */
+        }
+
+        .content h2 {
+            font-family: 'Courier New', monospace; /* Changed font for headings */
+            font-size: 1.8em;
+            color: #555; /* Custom heading color */
+            text-transform: uppercase; /* Optional: All caps */
+            animation: slideIn 1.5s ease-out; /* Slide-in animation */
+        }
+
+        /* Education Section */
+        .education-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .education-item {
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            gap: 200px;
+            text-align: left;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+            animation: zoomIn 1.5s ease-out; /* Zoom-in animation */
+        }
+
+        .education-item img {
+            width: 350px;
+            max-width: 300%;
+            border-radius: 5px;
+            margin: 0;
+            animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+        }
+
+        .education-item p {
+            margin: 20px 0;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333; /* Dark background */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 4px;
+            font-size: 0.9em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 3s ease-out; /* Fade-in animation */
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation Definitions */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TENGKU NURNAZIFA</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="experiences.html">EXPERIENCES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>EDUCATION</h2>
+        <div class="education-section">
+            <div class="education-item">
+                <img src="skkj.jpg" alt="Primary School">
+                <div>
+                    <p>Primary School:</p>
+                    <p>Sekolah Kebangsaan Kota Jembal</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <img src="smkrs.jpg" alt="High School">
+                <div>
+                    <p>High School:</p>
+                    <p>Sekolah Menengah Kebangsaan Raja Sakti</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <img src="image4.jpg" alt="University">
+                <div>
+                    <p>University:</p>
+                    <p>Universiti Teknologi Mara (UiTM)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tengku Nurnazifa. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>

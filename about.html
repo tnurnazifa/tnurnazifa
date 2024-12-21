@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengku Nurnazifa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            animation: slideIn 1s ease-out;
+        }
+
+        header h1 {
+            font-family: "serif";
+            letter-spacing: 2px;
+            font-size: 1.5em;
+            color: #333;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.9em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+            animation: fadeIn 2s ease-out;
+        }
+
+        nav ul li a:hover {
+            color: #555;
+        }
+
+        /* Main Section */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .text-section {
+            width: 55%;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .text-section h2 {
+            font-size: 2em;
+            margin: 0;
+            font-family: serif;
+            color: #333;
+            transition: color 0.3s ease;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .text-section p {
+            margin-bottom: 15px;
+            color: #555;
+            transition: color 0.3s ease;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .text-section p:hover {
+            color: #333;
+        }
+
+        .image-section {
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: zoomIn 1.5s ease-out;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Biodata Section */
+        .biodata-section {
+            background-color: #f0f0f0;
+            padding: 30px 20px;
+            text-align: center;
+            font-family: "Georgia", serif;
+            font-style: italic;
+            margin: 20px auto;
+            border-radius: 10px;
+            animation: fadeIn 2.5s ease-out;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .biodata-section:hover {
+            background-color: #e0e0e0;
+        }
+
+        .biodata-section p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #333;
+            transition: color 0.3s ease;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .biodata-section p:hover {
+            color: gray;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 4px;
+            font-size: 0.9em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 3s ease-out;
+        }
+
+        footer:hover {
+            background-color: #444;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: gray;
+        }
+
+        /* Animation Definitions */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>TENGKU NURNAZIFA</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="experiences.html">EXPERIENCES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="text-section">
+            <h2>ABOUT</h2>
+            <p>Let me introduce myself! I am a final year diploma student in Information Management at University Teknologi Mara (UiTM). I consider myself a responsible and orderly person. I can work well on a team and I can manage my time wisely.</p>
+            <p>I come from a large and lively family of nine, which includes my parents and my seven siblings. Being the fourth child has given me a unique perspective in our family dynamics. I have an older sister and two older brothers. I also have two younger sisters and one younger brother, bringing a youthful and vibrant energy to our household.</p>
+            <p>Growing up in such a big family has taught me valuable lessons about cooperation, communication, and teamwork. Each of us has our own personality and interests, which makes our home full of life and stories. Whether it's celebrating achievements, supporting each other through challenges, or simply sharing laughs over dinner, our family bond is something I truly cherish.</p>
+        </div>
+
+        <div class="image-section">
+            <img src="image2.jpg" alt="Tengku Nurnazifa">
+        </div>
+    </div>
+
+    <!-- Biodata Section -->
+    <section class="biodata-section">
+        <p><strong>My Full Name:</strong> Tengku Nurnazifa Binti Tengku Farizul</p>
+        <p><strong>Date of Birth:</strong> 19 May 2004 (20)</p>
+        <p><strong>Personal Email:</strong> tengkunazifa@gmail.com</p>
+        <p><strong>Student Email:</strong> 2022479764@student.uitm.edu.my</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tengku Nurnazifa. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
